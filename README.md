@@ -15,4 +15,4 @@
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
-![alt text] (https://github.com/hawk0774/05-virt-03-docker-compose/blob/main/Screenshot_5.png)
+![alt text] (https://github.com/hawk0774/05-virt-03-docker-compose/blob/main/Screenshot_5.png?raw=true)
