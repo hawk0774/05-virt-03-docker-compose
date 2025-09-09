@@ -34,8 +34,10 @@
 8. Отредактируйте файл "/etc/nginx/conf.d/default.conf", заменив порт "listen 80" на "listen 81".
 ![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_3.png)
 9. Запомните(!) и выполните команду ```nginx -s reload```, а затем внутри контейнера ```curl http://127.0.0.1:80 ; curl http://127.0.0.1:81```.
+
 ![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_4.png)
 ![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_8.png)
+
 10. Выйдите из контейнера, набрав в консоли  ```exit``` или Ctrl-D.
 11. Проверьте вывод команд: ```ss -tlpn | grep 127.0.0.1:8080``` , ```docker port custom-nginx-t2```, ```curl http://127.0.0.1:8080```. Кратко объясните суть возникшей проблемы.
 - Порт 8080 custom-nginx-t2 остался открытым, но он прибинден к порту 80 внутри контейнера, а так как nginx перестал прослушивать порт 80, то сетевой доступ пропал. 
