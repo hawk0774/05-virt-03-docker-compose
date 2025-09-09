@@ -87,10 +87,15 @@ services:
 
 - *Docker Compose автоматически выбрал compose.yaml, хотя у нас также есть docker-compose.yaml, так как оба файла являются допустимыми конфигурационными файлами, но порядок их проверки зависит от внутренней логики Docker Compose, показанной в статье. В данном случае он выбрал compose.yaml.*
 
+![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_13.png)
+
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
 
 - *Был добавлен include на файл docker-compose.yaml*
 
+![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_15.png)
+
+![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_14.png)
 
 4. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
 5. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
