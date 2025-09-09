@@ -20,3 +20,8 @@
 ![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_6.png)
 
 ![alt text](https://raw.githubusercontent.com/hawk0774/05-virt-03-docker-compose/main/Screenshot_7.png)
+
+## Задача 3
+1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
+Для подключения к стандартному потоку ввода-вывода требется выполнить команду docker attach.
+При нажатии комбинации Ctrl-C контейнер остановится так как это отправляет сигнал прерывания (SIGINT) процессу внутри контейнера, процесс завершается и следовательно завершает работу контейнер. 
